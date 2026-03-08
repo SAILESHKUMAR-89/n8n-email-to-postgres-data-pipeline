@@ -65,37 +65,36 @@ Tool	Purpose
 CSV Files	Input data format
 
 📂 Project Structure
-n8n-email-to-postgres-data-pipeline
 
 n8n-email-to-postgres-data-pipeline
-
+│
 ├── n8n
 │   └── postgres_data_ingestion_workflow.json
-
+│
 ├── data
 │   ├── incoming_mail_data
 │   │   ├── fact_aggregate_india_2025-05-17.csv
 │   │   ├── fact_aggregate_usa_2025-05-17.csv
 │   │   ├── fact_order_line_india_2025-05-17.csv
 │   │   └── fact_order_line_usa_2025-05-17.csv
-│
+│   │
 │   └── postgres_input_files
 │       ├── dim_customers.csv
 │       ├── dim_products.csv
 │       ├── dim_targets_orders.csv
 │       ├── fact_aggregate.csv
 │       └── fact_order_line.csv
-
+│
 ├── quadratic
 │   ├── dim_date.csv
 │   ├── exchange_rate.csv
 │   └── fact_aggregate.csv
-
+│
 ├── screenshots
 │   ├── n8n_workflow.png
 │   ├── supabase_tables.png
 │   └── quadratic_tables.png
-
+│
 └── README.md
 
 🔗 Project Access Links
