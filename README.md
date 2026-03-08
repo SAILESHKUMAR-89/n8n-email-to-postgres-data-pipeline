@@ -56,46 +56,52 @@ Within Quadratic, additional analytical tables were created:
 These tables allow further data exploration and analysis.
 
 🛠️ Technologies Used
-Tool	Purpose
+Tool Purpose
 1. n8n	Workflow automation
-2. Gmail API	Email trigger for pipeline
-3. Supabase	PostgreSQL database hosting
-4. PostgreSQL	Data storage
-5. Quadratic AI Spreadsheet	Data analysis
-CSV Files	Input data format
+2. Gmail API Email trigger for pipeline
+3. Supabase PostgreSQL database hosting
+4. PostgreSQL Data storage
+5. Quadratic AI Spreadsheet Data analysis
+CSV Files Input data format
+
 
 📂 Project Structure
 
-n8n-email-to-postgres-data-pipeline
-│
-├── n8n
-│ └── postgres_data_ingestion_workflow.json
-│
-├── data
-│ ├── incoming_mail_data
-│ │ ├── fact_aggregate_india_2025-05-17.csv
-│ │ ├── fact_aggregate_usa_2025-05-17.csv
-│ │ ├── fact_order_line_india_2025-05-17.csv
-│ │ └── fact_order_line_usa_2025-05-17.csv
-│ │
-│ └── postgres_input_files
-│ ├── dim_customers.csv
-│ ├── dim_products.csv
-│ ├── dim_targets_orders.csv
-│ ├── fact_aggregate.csv
-│ └── fact_order_line.csv
-│
-├── quadratic
-│ ├── dim_date.csv
-│ ├── exchange_rate.csv
-│ └── fact_aggregate.csv
-│
-├── screenshots
-│ ├── n8n_workflow.png
-│ ├── supabase_tables.png
-│ └── quadratic_tables.png
-│
-└── README.md
+The repository is organized into the following folders:
+n8n/
+Contains the automation workflow used to ingest data from Gmail and load it into PostgreSQL.
+postgres_data_ingestion_workflow.json – n8n workflow configuration file.
+
+data/
+This folder contains datasets used in the pipeline.
+        incoming_mail_data/
+        Contains sample datasets that simulate daily sales reports received through email.
+                1. fact_aggregate_india_2025-05-17.csv
+                2. fact_aggregate_usa_2025-05-17.csv
+                3. fact_order_line_india_2025-05-17.csv
+                4. fact_order_line_usa_2025-05-17.csv
+        postgres_input_files/
+        Contains datasets used to initialize database tables in Supabase PostgreSQL.
+                1. dim_customers.csv
+                2. dim_products.csv
+                3. dim_targets_orders.csv
+                4. fact_aggregate.csv
+                5. fact_order_line.csv
+
+quadratic/
+Contains datasets generated and exported from the Quadratic AI Spreadsheet during analysis.
+        1. dim_date.csv
+        2. exchange_rate.csv
+        3. fact_aggregate.csv
+
+screenshots/
+Contains images demonstrating the project workflow and outputs.
+        1. n8n workflow automation screenshot
+        2. Supabase database tables screenshot
+        3. Quadratic spreadsheet analysis screenshot
+
+README.md
+Contains documentation describing the project, pipeline workflow, technologies used, and project structure.
 
 🔗 Project Access Links
 Supabase Database
