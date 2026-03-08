@@ -64,17 +64,6 @@ Tool Purpose
 5. Quadratic AI Spreadsheet Data analysis
 CSV Files Input data format
 
-🔗 Project Access Links
-Supabase Database
-
-Supabase PostgreSQL Project
-[Supabase project link here](https://jmblbqjvygoxdmseinsk.supabase.co)
-
-Quadratic Spreadsheet
-
-Quadratic AI Spreadsheet (View Only)
-[Quadratic view link here](https://app.quadratichq.com/file/786b73f5-5e8f-4a67-85a7-bb96831a7b82)
-
 📸 Screenshots
 
 Added screenshots of:
