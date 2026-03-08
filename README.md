@@ -67,6 +67,8 @@ CSV Files	Input data format
 📂 Project Structure
 n8n-email-to-postgres-data-pipeline
 
+n8n-email-to-postgres-data-pipeline
+
 ├── n8n
 │   └── postgres_data_ingestion_workflow.json
 
